@@ -27,7 +27,7 @@ class VersionField(models.Field):
 
     def db_type(self, connection):
         """Use integer as internal representation."""
-        return "integer"
+        return "bigint"
 
     def to_python(self, value):
         if not value:
